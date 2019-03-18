@@ -1,6 +1,6 @@
-import com.nrsc.springstudy.c3_factorybean.bean.Apple;
-import com.nrsc.springstudy.c3_factorybean.bean.MyFactoryBean2;
-import com.nrsc.springstudy.c3_factorybean.config.*;
+import com.nrsc.springstudy.c03_factorybean.bean.Apple;
+import com.nrsc.springstudy.c03_factorybean.bean.MyFactoryBean2;
+import com.nrsc.springstudy.c03_factorybean.config.*;
 import org.junit.Test;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
@@ -38,12 +38,12 @@ public class Test03_FactoryBean {
     public void test02() {
         AnnotationConfigApplicationContext ac = new AnnotationConfigApplicationContext(FactoryBeanConfig2.class);
         //看源码解析图
-        Object myFactoryBean = ac.getBean("com.nrsc.springstudy.c3_factorybean.config.MyFactoryBean");
+        Object myFactoryBean = ac.getBean("com.nrsc.springstudy.c03_factorybean.config.MyFactoryBean");
         System.out.println("myFactoryBean=====" + myFactoryBean.getClass());
         System.out.println(myFactoryBean.toString());
 
         //看源码解析图
-        MyFactoryBean bean = (MyFactoryBean) ac.getBean("&com.nrsc.springstudy.c3_factorybean.config.MyFactoryBean");
+        MyFactoryBean bean = (MyFactoryBean) ac.getBean("&com.nrsc.springstudy.c03_factorybean.config.MyFactoryBean");
 
         System.out.println("&myFactoryBean=====" + bean.getClass());
 

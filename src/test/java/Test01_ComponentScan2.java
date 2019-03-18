@@ -1,6 +1,6 @@
-import com.nrsc.springstudy.c1_componentscan1.study2.config.Config1;
-import com.nrsc.springstudy.c1_componentscan1.study2.config.Config2;
-import com.nrsc.springstudy.c1_componentscan1.study2.config.Config3;
+import com.nrsc.springstudy.c01_componentscan1.study2.config.Config1;
+import com.nrsc.springstudy.c01_componentscan1.study2.config.Config2;
+import com.nrsc.springstudy.c01_componentscan1.study2.config.Config3;
 import org.junit.Test;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 

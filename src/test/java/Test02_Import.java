@@ -1,6 +1,6 @@
-import com.nrsc.springstudy.c2_import.config.ImportStudyConfig1;
-import com.nrsc.springstudy.c2_import.config.ImportStudyConfig2;
-import com.nrsc.springstudy.c2_import.config.ImportStudyConfig3;
+import com.nrsc.springstudy.c02_import.config.ImportStudyConfig1;
+import com.nrsc.springstudy.c02_import.config.ImportStudyConfig2;
+import com.nrsc.springstudy.c02_import.config.ImportStudyConfig3;
 import org.junit.Test;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 

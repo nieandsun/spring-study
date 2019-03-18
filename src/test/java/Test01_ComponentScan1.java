@@ -1,9 +1,9 @@
-import com.nrsc.springstudy.c1_componentscan1.study1.config.Config2;
-import com.nrsc.springstudy.c1_componentscan1.study1.config.Config3;
-import com.nrsc.springstudy.c1_componentscan1.study1.config.Config4;
-import com.nrsc.springstudy.c1_componentscan1.study1.config.Config5;
-import com.nrsc.springstudy.c1_componentscan1.study1.config2_test.Config1;
-import com.nrsc.springstudy.c1_componentscan1.study1.config5_test.Config5_1;
+import com.nrsc.springstudy.c01_componentscan1.study1.config.Config2;
+import com.nrsc.springstudy.c01_componentscan1.study1.config.Config3;
+import com.nrsc.springstudy.c01_componentscan1.study1.config.Config4;
+import com.nrsc.springstudy.c01_componentscan1.study1.config.Config5;
+import com.nrsc.springstudy.c01_componentscan1.study1.config2_test.Config1;
+import com.nrsc.springstudy.c01_componentscan1.study1.config5_test.Config5_1;
 import org.junit.Test;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
