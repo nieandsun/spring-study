@@ -7,7 +7,7 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
  * @date : 2019/11/18 15:24
  * Description:
  */
-public class Test08_bean_life_cycle {
+public class Test072_bean_life_cycle {
 
 
     @Test

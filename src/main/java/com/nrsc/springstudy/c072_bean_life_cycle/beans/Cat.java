@@ -1,6 +1,6 @@
 package com.nrsc.springstudy.c072_bean_life_cycle.beans;
 
-import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.InitializingBean;
 
 import javax.annotation.PostConstruct;
 
@@ -9,10 +9,10 @@ import javax.annotation.PostConstruct;
  * @date : 2019/11/18 15:25
  * Description:
  */
-public class Cat {
+public class Cat implements InitializingBean {
 
-    @Autowired
-    private Tiger tiger;
+//    @Autowired
+//    private Tiger tiger;
 
     private String name;
 
