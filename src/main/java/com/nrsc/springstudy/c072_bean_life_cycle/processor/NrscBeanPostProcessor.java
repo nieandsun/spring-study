@@ -2,14 +2,13 @@ package com.nrsc.springstudy.c072_bean_life_cycle.processor;
 
 import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.config.BeanPostProcessor;
-import org.springframework.stereotype.Component;
 
 /**
  * @author : Sun Chuan
  * @date : 2019/11/23 16:02
  * Description：
  */
-@Component
+//@Component
 public class NrscBeanPostProcessor implements BeanPostProcessor {
 
     public Object postProcessBeforeInitialization(Object bean, String beanName) throws BeansException {
