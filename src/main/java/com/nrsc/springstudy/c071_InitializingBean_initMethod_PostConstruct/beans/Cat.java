@@ -32,6 +32,7 @@ public class Cat implements InitializingBean {
     }
 
     //继承了InitializingBean接口，需要实现afterPropertiesSet方法---对应于InitializingBean的用法
+    @Override
     public void afterPropertiesSet() throws Exception {
         System.out.println("Cat......afterPropertiesSet............");
     }
@@ -39,4 +40,5 @@ public class Cat implements InitializingBean {
     public void  init2(){
         System.out.println("Cat......@PostConstruct............");
     }
+
 }
