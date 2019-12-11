@@ -13,7 +13,7 @@ public class Test10_AOP {
     public void test01() {
         AnnotationConfigApplicationContext ac = new AnnotationConfigApplicationContext(C10Config.class);
         Calculator bean = ac.getBean(Calculator.class);
-        int div = bean.div(4, 0);
+        int div = bean.div(4, 2);
         System.err.println("=====结果为=======" + div);
         ac.close();
     }

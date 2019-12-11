@@ -54,27 +54,27 @@ public class LogAspects {
         System.out.println("@AfterThrowing运行异常......异常信息是:{" + exception + "}");
     }
 
-//    @Around("pointCut()") //环绕通知 --- 工作中我习惯用这个
-//    public Object Around(ProceedingJoinPoint proceedingJoinPoint) throws Throwable {
-//        System.out.println("@Arount:执行目标方法之前...");
-//        //相当于开始调div地
-//        Object obj = proceedingJoinPoint.proceed();
-//        System.out.println("@Arount:执行目标方法之后...");
-//        return obj;
-//    }
-
     @Around("pointCut()") //环绕通知 --- 工作中我习惯用这个
-    public Object Around(ProceedingJoinPoint proceedingJoinPoint) {
+    public Object Around(ProceedingJoinPoint proceedingJoinPoint) throws Throwable {
         System.out.println("@Arount:执行目标方法之前...");
         //相当于开始调div地
-        Object obj = null;
-        try {
-            obj = proceedingJoinPoint.proceed();
-        } catch (Throwable throwable) {
-            System.out.println("@Around运行异常......异常信息是:{" + throwable.getMessage() + "}");
-            //throwable.printStackTrace();
-        }
+        Object obj = proceedingJoinPoint.proceed();
         System.out.println("@Arount:执行目标方法之后...");
         return obj;
     }
+
+//    @Around("pointCut()") //环绕通知 --- 工作中我习惯用这个
+//    public Object Around(ProceedingJoinPoint proceedingJoinPoint) {
+//        System.out.println("@Arount:执行目标方法之前...");
+//        //相当于开始调div地
+//        Object obj = null;
+//        try {
+//            obj = proceedingJoinPoint.proceed();
+//        } catch (Throwable throwable) {
+//            System.out.println("@Around运行异常......异常信息是:{" + throwable.getMessage() + "}");
+//            //throwable.printStackTrace();
+//        }
+//        System.out.println("@Arount:执行目标方法之后...");
+//        return obj;
+//    }
 }
