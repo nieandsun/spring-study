@@ -35,6 +35,6 @@ public class UserServiceImpl implements UserService {
         //往员工表里插入该用户的用户信息
         userServiceDao.saveUserInfo(username, account);
 
-        //int i = 1 / 0;
+        int i = 1 / 0;
     }
 }

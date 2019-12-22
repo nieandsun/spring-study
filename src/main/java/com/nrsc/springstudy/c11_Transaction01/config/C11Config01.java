@@ -20,7 +20,7 @@ import java.beans.PropertyVetoException;
  */
 
 @Configuration
-@ComponentScan(value = "com.nrsc.springstudy.c11_Transaction")
+@ComponentScan(value = "com.nrsc.springstudy.c11_Transaction01")
 @EnableTransactionManagement //开启事务注解功能
 public class C11Config01 {
 
