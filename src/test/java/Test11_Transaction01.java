@@ -18,8 +18,11 @@ public class Test11_Transaction01 {
     public void test01() {
         AnnotationConfigApplicationContext ac = new AnnotationConfigApplicationContext(C11Config01.class);
 
-        UserService userService = ac.getBean(UserService.class);
-        userService.addUserAndSalary("张三", BigDecimal.valueOf(1000));
+        UserService userServiceImpl = (UserService) ac.getBean("userServiceImpl");
+        userServiceImpl.addUserAndSalary("张三", BigDecimal.valueOf(1000));
+
+        UserService userServiceImpl2 = (UserService) ac.getBean("userServiceImpl2");
+        userServiceImpl2.addUserAndSalary("李四", BigDecimal.valueOf(2000));
 
         ac.close();
     }
