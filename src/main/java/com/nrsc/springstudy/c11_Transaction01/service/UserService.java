@@ -9,4 +9,6 @@ import java.math.BigDecimal;
  */
 public interface UserService {
     void addUserAndSalary(String username, BigDecimal salary);
+
+    void addSalary(String account,BigDecimal salary);
 }

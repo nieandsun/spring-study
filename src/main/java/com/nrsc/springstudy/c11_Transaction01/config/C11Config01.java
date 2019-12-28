@@ -4,6 +4,7 @@ import com.alibaba.druid.pool.DruidDataSource;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.EnableAspectJAutoProxy;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.datasource.DataSourceTransactionManager;
 import org.springframework.transaction.PlatformTransactionManager;
@@ -20,6 +21,7 @@ import javax.sql.DataSource;
 @Configuration
 @ComponentScan(value = "com.nrsc.springstudy.c11_Transaction01")
 @EnableTransactionManagement //开启事务注解功能
+@EnableAspectJAutoProxy(exposeProxy = true)
 public class C11Config01 {
     //--------------------------------数据源1--------------------------------------------
     //创建数据源

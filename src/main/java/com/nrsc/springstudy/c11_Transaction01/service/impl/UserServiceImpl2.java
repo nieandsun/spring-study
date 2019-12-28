@@ -27,4 +27,9 @@ public class UserServiceImpl2 implements UserService {
         userDaoImpl2.saveUserInfo(username, account);
 
     }
+
+    @Override
+    public void addSalary(String account, BigDecimal salary) {
+
+    }
 }
